@@ -1,5 +1,5 @@
-The London Python Dojo
-======================
+About
+=====
 
 :date: 2012-03-04 12:45
 :tags: ldnpydojo
