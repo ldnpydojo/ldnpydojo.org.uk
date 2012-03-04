@@ -9,4 +9,4 @@ This is some blah, blah, blah about the London Python Dojo which can generally b
 found hanging around on the 1st Thursday of every month, most often at the premises
 of Fry-IT, sometimes elsewhere.
 
-Blha blah 2
+Blha
