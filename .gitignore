@@ -1,2 +1,5 @@
-
+# Rendered output
 /output
+
+# Annoying OSX preview files
+.DS_Store

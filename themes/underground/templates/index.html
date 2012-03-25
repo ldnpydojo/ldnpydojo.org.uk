@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+
+{% if articles %}
+    {% for article in articles_page.object_list %}
+
+        {# First article shown in full #}
+        {% if loop.first and not articles_page.has_previous() %}
+            <section id="featured-post">
+                <article class="main-post">
+                    {% include 'article_info.html' %}
+                    {{ article.content }}
+                    {% include 'comments.html' %}
+                </article>
+            </section><!-- /#featured -->
+
+            {% if loop.length > 1 %}
+                <section id="other-posts">
+                    <h1>Other articles</h1>
+                    <hr />
+                        <ol id="posts-list">
+            {% endif %}
+
+        {# other items #}
+        {% else %}
+            {% if loop.first and articles_page.has_previous %}
+                <section id="other-posts">
+                    <ol id="posts-list" start="{{ ( articles_page.number - 1 ) * articles_paginator.per_page }}">
+            {% endif %}
+                <li>
+                    <article class="post-preview">
+                        {% include 'article_info.html' %}
+                        {{ article.summary }}
+                        <a href="{{ SITEURL }}/{{ article.url }}">Read more</a>
+                        {% include 'comments.html' %}
+                    </article>
+                </li>
+        {% endif %}
+
+        {% if loop.last %}
+            {% include 'pagination.html' %}
+        {% endif %}
+    {% endfor %}
+    {% if loop.length > 1 or articles_page.has_previous() %}
+        </ol><!-- /#posts-list -->
+    </section><!-- /#other-posts -->
+    {% endif %}
+{% endif %}
+{% endblock content %}
