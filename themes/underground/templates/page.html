@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block title %}{{ page.title }}{% endblock %}
-{% block content %}
-<!-- Pages are non-editorial content. A Page automatically gets a link in main-nav. -->      
-<section id="content-{{ page.slug }}" class="page-content"> 
-    <h1>{{ page.title }}</h1>
-    {{ page.content }}
-</section>
-{% endblock %}
