@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set this to the main language of your site -->
+<head>
+	<meta charset="utf-8">
+
+	<title>London Python Coding Dojo</title>
+
+	<!-- Enter a brief description of your page -->
+	<meta name="description" content="The London Python Coding Dojo">
+
+	<!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+	<!-- For legacy support (IE 6/7, Firefox < 4, and Safari < 5) use normalize-legacy.css instead -->
+	<!--<link href="css/normalize-legacy.css" rel="stylesheet" media="all">-->
+
+	<!-- Include the site stylesheet -->
+	<link href="css/styles.css" rel="stylesheet" media="all">
+
+	<!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+
+	<!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
+	<!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
+	<header role="banner">
+
+		<h1>The London Python Coding Dojo</h1>
+        <img src="media/python.png"/><img src="media/dojo.png"/>
+
+	</header>
+
+	<!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
+	<div class="wrap">
+
+		<!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
+		<!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
+		<main> element until user agents implement the required role mapping. -->
+		<main role="main">
+
+			<!-- The <section> element can be used to enclose content that comes under a related heading.
+			NOTE: The <section> element can contain <article> elements and vice versa, if you think the content warrants it. -->
+			<section>
+
+				<!-- This is the section's header. It contains the heading and navigation links for within the section -->
+				<article id="what-is-it">
+					<h2>What is it?</h2>
+                    <p>A coding dojo is a safe place to deliberately practice and develop your coding skills, and perhaps learn something new too. We don’t really (read: never) stick to a strict dojo format but rather brainstorm ideas for problems to solve, choosing one by popular, if complicated, vote, and then break into teams courtesy of the London Python Dojo Fully Patented Numbering Scheme for an hour and a half of furious coding (at least, furious something). To wrap the evening up each team does a “show and tell”, and end with drinks in the pub.<p>
+                    <p>Here’s a <a href="http://www.slideshare.net/ntoll/the-london-python-code-dojo-an-education-in-developer-education">presentation given at Europython 2011 that explains things further</a></p>
+                    <p>And a blog post: “<a href="http://ntoll.org/article/how-to-run-an-awesome-code-dojo">How to Run an Awesome Code Dojo</a>”</p>
+                    <p>Food and refreshments are kindly provided by each month’s hosts</p>
+                    <p><a href="http://oreilly.com/">O’Reilly</a> support us each month by supplying a book to “win” in the name tag “Tombola”.</p>
+				</article>
+
+				<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
+				<article id="when-is-it">
+					<h2>When is it?</h2>
+                    <p>Usually the first Thursday of the month, with beer &amp; pizza from 6.30pm to 7.30pm, followed by coding until about 10pm.</p>
+				</article>
+
+                <article id="where-is-it">
+                    <h2>Where is it?</h2>
+                    <p>We're very fortunate that a number of companies are willing to host the Dojo,
+                    as a one-off or on an ongoing basis. Since the beginning, <a href="http://www.fry-it.com/">Fry IT</a>
+                    have generously acted as hosts and they continue to do so for which support we are very grateful.</p>
+
+                    <p>The host company and location for each month will be announced with the rest
+                    of the details a week before the Dojo.</p>
+                </article>
+
+                <article id="how-do-i-sign-up">
+                    <h2>How do I sign up?</h2>
+                    <p>We use Eventwax for our bookings. When the month's event has been created is is announced
+                    on the <a href="https://mail.python.org/mailman/listinfo/python-uk">Python UK Mailing List</a>
+                    and via the <a href="https://twitter.com/ldnpydojo">@ldnpydojo</a> Twitter account.</p>
+                </article>
+
+			</section>
+
+		</main>
+
+	</div>
+
+</body>
+</html>
